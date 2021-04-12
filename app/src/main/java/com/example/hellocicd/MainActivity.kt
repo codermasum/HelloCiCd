@@ -8,5 +8,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // fixing yaml file error
         setContentView(R.layout.activity_main)
+        // We have created a Test branch.
     }
 }
