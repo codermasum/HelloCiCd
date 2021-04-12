@@ -6,7 +6,7 @@ jobs:
 
     steps:
       -uses: actions/checkout@v1
-       name: Set Up JDk
+       name: Set Up JDK
        uses: actions/setup-java@v1
        with:
          java-version: 1.8
