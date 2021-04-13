@@ -2,12 +2,15 @@ package com.example.hellocicd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // fixing yaml file with another file
         setContentView(R.layout.activity_main)
-        // We have created a Test branch.
+        findViewById<View>(R.id.button).setOnClickListener(){
+            Toast.makeText(this, "Hello Ci/Cd",Toast.LENGTH_SHORT).show()
+        }
     }
 }
